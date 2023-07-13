@@ -154,3 +154,12 @@ body {
 .my-3{
     margin-top: 30px;
 }
+#language {
+  padding: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  border: 1px solid var(--line-gray, #f0f0f0);
+  background: #fff;
+}

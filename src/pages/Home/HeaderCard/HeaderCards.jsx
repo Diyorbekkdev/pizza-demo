@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext} from "react";
 import bg1 from "../../../assets/images/pizza1.png";
 import bg2 from "../../../assets/images/pizza2.png";
 

@@ -63,8 +63,8 @@ const MainHeader = () => {
                 value={selectedLanguage}
                 onChange={(e) => changeLanguage(e.target.value)}
               >
-                <option value="en">Eng</option>
-                <option value="ru">Ru</option>
+                <option value="en">English</option>
+                <option value="ru">Russian</option>
               </select>
             </div>
             <p className="address">{selectedLanguage === 'en' ? 'Check the address' : 'Проверить адрес'}</p>

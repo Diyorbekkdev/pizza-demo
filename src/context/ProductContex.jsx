@@ -4,18 +4,8 @@ import "react-toastify/dist/ReactToastify.css";
 export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
-  const [cartItems, setCartItems] = useState([]);
-
-  useEffect(() => {
-    const savedCartItems = localStorage.getItem("cartItems");
-    if (savedCartItems) {
-      setCartItems(JSON.parse(savedCartItems));
-    }
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem("cartItems", JSON.stringify(cartItems));
-  }, [cartItems]);
+  const savedCartItems = localStorage.getItem("cartItems");
+  const [cartItems, setCartItems] = useState(JSON.parse(savedCartItems) || []);
 
   const addToCart = (item) => {
     const existingItem = cartItems.find((cartItem) => cartItem.id === item.id);
@@ -38,7 +28,9 @@ export const CartProvider = ({ children }) => {
       });
     } else {
       setCartItems((prevItems) => [...prevItems, { ...item, quantity: 1 }]);
-      toast.success("Product added to cart!",{
+      console.log(cartItems);
+      localStorage.setItem("cartItems", JSON.stringify(cartItems));
+      toast.success("Product added to cart!", {
         position: toast.POSITION.TOP_CENTER,
         autoClose: 3000,
         hideProgressBar: false,
