@@ -1,0 +1,71 @@
+@mixin media($size) {
+  @media only screen and (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin first-mobile($px) {
+  @media (min-width: $px) {
+    @content;
+  }
+}
+
+%df {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%nav {
+  font-family: "Inter";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+%heading {
+  font-family: "Inter";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px;
+}
+
+%card_title {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+%card_info {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+%price {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+%btn {
+  background: transparent;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #ff7010;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+  &:hover {
+    background: #e6640e;
+  }
+}

@@ -1,0 +1,86 @@
+@import "../../../style/mixin.scss";
+
+.cartCards_row {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 850px;
+    margin: 15px auto;
+  .cart_cards {
+    @extend %df;
+    width: 100%;
+    height: 152px;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid var(--line-gray, #f0f0f0);
+    background: var(--white, #fff);
+    .main_info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 50%;
+      gap: 20px;
+      img {
+        width: 50%;
+        border-radius: 50%;
+      }
+    }
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      p{
+        @extend %price;
+        color: #ff7010;
+      }
+      .btn {
+        outline: none;
+        border: none;
+        padding: 8px;
+        color: #ff7010;
+        text-align: center;
+        font-family: "Inter";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+        background: var(--light-primary, #ffeee2);
+        cursor: pointer;
+        transition: .3s ease-out;
+        &:hover {
+          background: var(--light-primary, #fad7bd);
+        }
+      }
+      .decrease {
+        border-radius: 6px 0 0 6px;
+      }
+      .increase {
+        border-radius: 0px 6px 6px 0px;
+      }
+    }
+  }
+  .total_price{
+    background: #fff;
+    width: 100%;
+    text-align: center;
+    max-width: 850px;
+    height: 152px;
+    margin: 0 auto;
+    padding: 16px;
+    border-radius: 12px;
+    background: var(--white, #fff);
+    @extend %heading;
+    color: #ff7010;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    span{
+        color: #ff7010;
+        @extend %heading;
+    }
+  }
+}

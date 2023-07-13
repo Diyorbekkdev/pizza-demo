@@ -1,0 +1,26 @@
+@import "../../../style/mixin.scss";
+
+
+.header_card{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    .card_box {
+      max-width: 300px;
+      height: 343px;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: flex-end;
+      padding: 20px;
+      .title {
+        font-family: "Inter";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+        color: #fff;
+      }
+    }
+}

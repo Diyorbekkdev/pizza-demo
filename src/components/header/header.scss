@@ -1,0 +1,133 @@
+@import '../../style/mixin.scss';
+
+body {
+  background: #F9F9F9;
+}
+
+.header {
+  padding: 11px 0;
+  background: #fff;
+  nav {
+    @extend %df;
+    .nav_left {
+      .language_option {
+        @extend %df;
+        gap: 10px;
+      }
+      img {
+        width: 30px;
+      }
+      @extend %df;
+      gap: 40px;
+      p {
+        @extend %nav;
+      }
+    }
+    .nav_right {
+      @extend %df;
+      gap: 40px;
+      .user_login {
+        @extend %df;
+        gap: 15px;
+      }
+    }
+  }
+  .line {
+    margin-top: 5px;
+    width: 100%;
+    height: 1px;
+    background: var(--line-gray, #f0f0f0);
+  }
+}
+
+.wrapper {
+  background: #fff;
+  top: -45px;
+  .fixed_navbar {
+    padding: 12px 0;
+    @extend %df;
+    .logo_wrapper {
+      @extend %df;
+      gap: 10px;
+      h1 {
+        @extend %nav;
+        font-size: 20px;
+      }
+      .sticky_navbar{
+        display: none !important;
+        margin-left: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 32px;
+        li a{
+            @extend %nav;
+            color: #000
+        }
+      }
+      .sticky_navbar.show_nav{
+        display: flex !important;
+      }
+    }
+    .cart {
+      @extend %df;
+      gap: 15px;
+      @extend %btn;
+      .price {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.wrapper.sticky{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    transition: .3s ease-out;
+    box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+    .fixed_navbar{
+        transition: .3s ease-out;
+        padding: 12px 0;
+    }
+}
+
+
+.category {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .category_row {
+    width: 135px;
+    height: 104px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border-radius: 12px;
+    border: 1px solid var(--line-gray, #f0f0f0);
+    background: var(--white, #fff);
+    .title {
+      margin-top: 5px;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      color: var(--black, #191919);
+    }
+  }
+  .active {
+    color: red;
+  }
+}
+.my-3{
+    margin-top: 30px;
+}

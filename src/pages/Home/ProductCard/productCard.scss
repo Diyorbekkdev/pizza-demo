@@ -1,0 +1,63 @@
+@import "../../../style/mixin.scss";
+
+.card {
+  position: relative;
+  padding: 20px;
+  max-width: 300px;
+  height: 480px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  border: 1px solid var(--line-gray, #f0f0f0);
+  background: var(--white, #fff);
+  .filter {
+    position: absolute;
+    background: #e23535;
+    color: #fff;
+    left: 0;
+    padding: 10px 15px;
+    border-radius: 0px 10px 10px 0px;
+    font-family: " Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  img {
+    width: 100%;
+    border: none;
+  }
+  h4 {
+    margin-top: 16px;
+    @extend %card_title;
+  }
+  .desc {
+    margin: 12px 0;
+    @extend %card_info;
+    & {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+
+  .btn_wrapper {
+    margin-top: 25px;
+    @extend %df;
+    .addToCart {
+      padding: 13px 32px;
+      background: transparent;
+      border: none;
+      border-radius: 6px;
+      background: var(--primary, #ff7010);
+      color: #fff;
+      cursor: pointer;
+    }
+    span {
+      @extend %price;
+      color: #ff7010;
+    }
+  }
+}
