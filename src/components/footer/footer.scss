@@ -1,0 +1,74 @@
+@import "../../style/mixin.scss";
+.footer {
+  padding: 25px 0;
+  background: #fff;
+  small {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+}
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  @include media(886px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    align-items: flex-start;
+    gap: 25px;
+  }
+  @include media(470px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: flex-start;
+    place-items: start;
+    gap: 25px;
+  }
+  .logo_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    h3 {
+      font-family: "Roboto";
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  ul li a {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    color: #000;
+  }
+  ul li .title {
+    font-weight: bold;
+  }
+  .contact_us {
+    li {
+      a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+    .last {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+    }
+  }
+ 
+}

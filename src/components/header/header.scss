@@ -40,18 +40,33 @@ body {
   }
 }
 
+.address, .delivering, .nav_right p{
+  @include media(728px){
+    display: none;
+  }
+}
+
 .wrapper {
   background: #fff;
   top: -45px;
   .fixed_navbar {
     padding: 12px 0;
     @extend %df;
+    @include media(1250px){
+      padding: 12px 0px; 
+    }
     .logo_wrapper {
       @extend %df;
       gap: 10px;
-      h1 {
-        @extend %nav;
-        font-size: 20px;
+      padding:0 20px;
+      .logo_box{
+        @extend %df;
+        gap: 15px;
+        h1 {
+          @extend %nav;
+          font-size: 20px;
+          color: #000;
+        }
       }
       .sticky_navbar{
         display: none !important;
@@ -67,12 +82,16 @@ body {
       }
       .sticky_navbar.show_nav{
         display: flex !important;
+        @include media(880px){
+          display: none !important;
+        }
       }
     }
     .cart {
       @extend %df;
       gap: 15px;
       @extend %btn;
+      margin-right: 19px;
       .price {
         font-size: 16px;
         font-style: normal;
@@ -104,6 +123,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include media(1013px){
+    flex-wrap: wrap;
+    gap: 15px;
+  }
   .category_row {
     width: 135px;
     height: 104px;

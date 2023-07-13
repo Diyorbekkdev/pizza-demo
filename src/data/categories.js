@@ -1,13 +1,13 @@
 import { products } from "./products";
 
 export const categories = [
-  { name: "Pizza", image: "/categories/pizza.svg", link: "pizza" },
-  { name: "Combo", image: "/categories/combo.svg", link: "Combo" },
-  { name: "Sushi", image: "/categories/sushi.svg", link: "Sushi" },
-  { name: "Sauces", image: "/categories/sauce.svg", link: "Sauces" },
-  { name: "Desserts", image: "/categories/desert.svg", link: "Desserts" },
-  { name: "Beverages", image: "/categories/drink.svg", link: "Beverages" },
-  { name: "Appetizers", image: "/categories/snack.svg", link: "Appetizers" },
+  { name: "Pizza", name2: 'Пицца', image: "/categories/pizza.svg", link: "pizza" },
+  { name: "Combo", name2: 'Комбо', image: "/categories/combo.svg", link: "Combo" },
+  { name: "Sushi", name2: 'Суши', image: "/categories/sushi.svg", link: "Sushi" },
+  { name: "Sauces", name2: 'Соусы', image: "/categories/sauce.svg", link: "Sushi" },
+  { name: "Desserts", name2: 'Десерты', image: "/categories/desert.svg", link: "Desserts" },
+  { name: "Beverages", name2: 'Напитки', image: "/categories/drink.svg", link: "Beverages" },
+  { name: "Appetizers", name2: 'Закуски', image: "/categories/snack.svg", link: "Appetizers" }
 ];
 
 export const pizzaProducts = products.filter((product) =>
@@ -28,3 +28,6 @@ export const BeveragesProducts = products.filter((res) =>
 export const ComboProducts = products.filter((res) =>
   res.category.includes("Combo")
 );
+
+
+

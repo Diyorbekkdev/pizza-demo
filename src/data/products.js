@@ -7,6 +7,9 @@ export const products = [
     name: "Sweet Chili Chicken",
     description:
       "Chicken, Onion, Jalapeno Pepper, Mozzarella Cheese, Tomato Sauce...",
+    name2: "Чикен Сладкий Чили",
+    description2:
+      "Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соу...",
     price: "389",
   },
   {
@@ -16,6 +19,8 @@ export const products = [
     image: "/products/pizzas/pizza-img-2.png",
     name: "EASY PEASY Cucumber Extravaganza",
     description: "Chicken, Onion, Jalapeno Pepper...",
+    name2: "EASY PEASY огуречный расколбас",
+    description2: "Курица, Лук, Перец Халапеньо...",
     price: "549",
   },
   {
@@ -25,6 +30,8 @@ export const products = [
     image: "/products/pizzas/pizza-img-3.png",
     name: "EASY PEASY Chicken a-la horseradish",
     description: "Chicken, Onion, Carbonara Sauce...",
+    name2: "EASY PEASY чикен а-ля хрен",
+    description2: "Курица, Лук, Соус Карбонара,...",
     price: "249",
   },
   {
@@ -34,6 +41,8 @@ export const products = [
     image: "/products/pizzas/pizza-img-4.png",
     name: "Four Seasons",
     description: "Bacon, Ham, Mushrooms, Chicken, Onion, Olives, Pickles...",
+    name2: "4 сезона",
+    description2: "Бекон, Ветчина, Грибы, Курица, Лук, Маслины, Огурцы мари...",
     price: "630",
   },
   {
@@ -43,6 +52,8 @@ export const products = [
     image: "/products/pizzas/pizza-img-5.png",
     name: "Four Seasons",
     description: "Bacon, Ham, Mushrooms, Chicken, Onion, Olives, Pickles...",
+    name2: "4 сезона",
+    description2: "Бекон, Ветчина, Грибы, Курица, Лук, Маслины, Огурцы мари...",
     price: "630",
   },
   {
@@ -52,6 +63,8 @@ export const products = [
     image: "/products/pizzas/pizza-img-6.png",
     name: "EASY PEASY Chicken a-la horseradish",
     description: "Chicken, Onion, Carbonara Sauce...",
+    name2: "EASY PEASY чикен а-ля хрен",
+    description2: "Курица, Лук, Соус Карбонара,...",
     price: "249",
   },
   {
@@ -62,6 +75,9 @@ export const products = [
     name: "Sweet Chili Chicken",
     description:
       "Chicken, Onion, Jalapeno Pepper, Mozzarella Cheese, Tomato Sauce...",
+    name2: "Чикен Сладкий Чили",
+    description2:
+      "Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соу...",
     price: "399",
   },
   {
@@ -71,6 +87,8 @@ export const products = [
     image: "/products/pizzas/pizza-img-8.png",
     name: "EASY PEASY Cucumber Extravaganza",
     description: "Chicken, Onion, Jalapeno Pepper...",
+    name2: "EASY PEASY огуречный расколбас",
+    description2: "Курица, Лук, Перец Халапеньо...",
     price: "549",
   },
   {
@@ -81,6 +99,8 @@ export const products = [
     name: "Philadelphia Crunch",
     description:
       "Salmon, Rice, Cheese, Creametto, Unagi Sauce, Shrimp, Avocado, Chip...",
+    description2:
+      "Сливочный сыр, семга татаки с тростниковым сахаром, соус у...",
     price: "475",
     discount: 22,
   },
@@ -91,6 +111,8 @@ export const products = [
     image: "/products/combos/combo-img-2.png",
     name: "Philadelphia Creme Brulee",
     description: "Cream Cheese, Salmon Tataki with Cane Sugar, Unagi Sauce...",
+    name2: "Супер Филадельфия",
+    description2: "Действительно много семги, сливочный сыр, огурец, рис, н...",
     price: "395",
     discount: 18,
   },
@@ -101,6 +123,8 @@ export const products = [
     image: "/products/combos/combo-img-3.png",
     name: "Super Philadelphia",
     description: "Plenty of Salmon, Cream Cheese, Cucumber, Rice...",
+    name2: "Тигр мама",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
     price: "425",
     discount: 10,
   },
@@ -111,6 +135,8 @@ export const products = [
     image: "/products/combos/combo-img-4.png",
     name: "Tiger Mama",
     description: "Tiger Prawn, Cucumber, Avocado, Aioli Sauce, Rice, Roe...",
+    name2: "Тигр мама",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
     price: "525",
     discount: 15,
   },
@@ -121,6 +147,9 @@ export const products = [
     image: "/products/combos/combo-img-5.png",
     name: "Philadelphia Creme Brulee",
     description: "Cream Cheese, Salmon Tataki with Cane Sugar, Unagi Sauce...",
+    name2: "Филадельфия крем-брюле",
+    description2:
+      "Сливочный сыр, семга татаки с тростниковым сахаром, соус у...",
     price: "395",
     discount: 18,
   },
@@ -132,6 +161,9 @@ export const products = [
     name: "Philadelphia Crunch",
     description:
       "Salmon, Rice, Creametto Cheese, Unagi Sauce, Shrimp, Avocado, Chip...",
+    name2: "Филадельфия кранч",
+    description2:
+      "Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...",
     price: "475",
     discount: 22,
   },
@@ -142,6 +174,8 @@ export const products = [
     image: "/products/combos/combo-img-7.png",
     name: "Tiger Mama",
     description: "Tiger Prawn, Cucumber, Avocado, Aioli Sauce, Rice, Roe...",
+    name2: "Супер Филадельфия",
+    description2: "Действительно много семги, сливочный сыр, огурец, рис, н...",
     price: "525",
     discount: 15,
   },
@@ -152,6 +186,9 @@ export const products = [
     image: "/products/combos/combo-img-8.png",
     name: "Super Philadelphia",
     description: "Plenty of Salmon, Cream Cheese, Cucumber, Rice...",
+    name2: "Филадельфия кранч",
+    description2:
+      "Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...",
     price: "425",
     discount: 10,
   },
@@ -161,7 +198,11 @@ export const products = [
     filter: "New",
     image: "/products/sushi/sushi-img-1.png",
     name: "Philadelphia Crunch",
-    description: "Salmon, Rice, Creametto Cheese, Unagi Sauce, Shrimp, Avocado, Chip...",
+    description:
+      "Salmon, Rice, Creametto Cheese, Unagi Sauce, Shrimp, Avocado, Chip...",
+    name2: "Филадельфия крем-брюле",
+    description2:
+      "Сливочный сыр, семга татаки с тростниковым сахаром, соус у...",
     price: "475",
   },
   {
@@ -171,6 +212,8 @@ export const products = [
     image: "/products/sushi/sushi-img-2.png",
     name: "Philadelphia Creme Brulee",
     description: "Cream Cheese, Salmon Tataki with Cane Sugar, Unagi Sauce...",
+    name2: "Супер Филадельфия",
+    description2: "Действительно много семги, сливочный сыр, огурец, рис, н...",
     price: "395",
   },
   {
@@ -180,6 +223,8 @@ export const products = [
     image: "/products/sushi/sushi-img-3.png",
     name: "Super Philadelphia",
     description: "Plenty of Salmon, Cream Cheese, Cucumber, Rice...",
+    name2: "Супер Филадельфия",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
     price: "425",
   },
   {
@@ -189,6 +234,8 @@ export const products = [
     image: "/products/sushi/sushi-img-4.png",
     name: "Tiger Mama",
     description: "Tiger Prawn, Cucumber, Avocado, Aioli Sauce, Rice, Roe...",
+    name2: "Супер Филадельфия",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
     price: "525",
   },
   {
@@ -198,6 +245,8 @@ export const products = [
     image: "/products/sushi/sushi-img-5.png",
     name: "Tiger Mama",
     description: "Tiger Prawn, Cucumber, Avocado, Aioli Sauce, Rice, Roe...",
+    name2: "Супер Филадельфия",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
     price: "525",
   },
   {
@@ -207,6 +256,8 @@ export const products = [
     image: "/products/sushi/sushi-img-6.png",
     name: "Super Philadelphia",
     description: "Plenty of Salmon, Cream Cheese, Cucumber, Rice...",
+    name2: "Супер Филадельфия",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
     price: "425",
   },
   {
@@ -215,7 +266,10 @@ export const products = [
     filter: "",
     image: "/products/sushi/sushi-img-7.png",
     name: "Philadelphia Crunch",
-    description: "Salmon, Rice, Creametto Cheese, Unagi Sauce, Shrimp, Avocado, Chip...",
+    description:
+      "Salmon, Rice, Creametto Cheese, Unagi Sauce, Shrimp, Avocado, Chip...",
+    name2: "Супер Филадельфия",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
     price: "475",
   },
   {
@@ -225,6 +279,8 @@ export const products = [
     image: "/products/sushi/sushi-img-8.png",
     name: "Philadelphia Creme Brulee",
     description: "Cream Cheese, Salmon Tataki with Cane Sugar, Unagi Sauce...",
+    name2: "Супер Филадельфия",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
     price: "395",
   },
   {
@@ -235,6 +291,8 @@ export const products = [
     name: "Philadelphia Crunch",
     description:
       "Salmon, Rice, Creametto Cheese, Unagi Sauce, Shrimp, Avocado, Chip...",
+    name2: "Супер Филадельфия",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
     price: "475",
   },
   {
@@ -244,6 +302,8 @@ export const products = [
     image: "/products/snacks/snack-img-2.png",
     name: "Philadelphia Creme Brulee",
     description: "Cream Cheese, Salmon Tataki with Cane Sugar, Unagi Sauce...",
+    name2: "Супер Филадельфия",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
     price: "395",
   },
   {
@@ -253,6 +313,8 @@ export const products = [
     image: "/products/snacks/snack-img-3.png",
     name: "Super Philadelphia",
     description: "Plenty of Salmon, Cream Cheese, Cucumber, Rice...",
+    name2: "Супер Филадельфия",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
     price: "425",
   },
   {
@@ -262,6 +324,8 @@ export const products = [
     image: "/products/snacks/snack-img-4.png",
     name: "Tiger Mama",
     description: "Tiger Prawn, Cucumber, Avocado, Aioli Sauce, Rice, Roe...",
+    name2: "Супер Филадельфия",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
     price: "525",
   },
   {
@@ -271,6 +335,8 @@ export const products = [
     image: "/products/snacks/snack-img-5.png",
     name: "Tiger Mama",
     description: "Tiger Prawn, Cucumber, Avocado, Aioli Sauce, Rice, Roe...",
+    name2: "Супер Филадельфия",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
     price: "525",
   },
   {
@@ -280,6 +346,8 @@ export const products = [
     image: "/products/snacks/snack-img-6.png",
     name: "Super Philadelphia",
     description: "Plenty of Salmon, Cream Cheese, Cucumber, Rice...",
+    name2: "Супер Филадельфия",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
     price: "425",
   },
   {
@@ -289,6 +357,8 @@ export const products = [
     image: "/products/snacks/snack-img-7.png",
     name: "Philadelphia Creme Brulee",
     description: "Cream Cheese, Salmon Tataki with Cane Sugar, Unagi Sauce...",
+    name2: "Супер Филадельфия",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
     price: "395",
   },
   {
@@ -299,6 +369,8 @@ export const products = [
     name: "Philadelphia Crunch",
     description:
       "Salmon, Rice, Creametto Cheese, Unagi Sauce, Shrimp, Avocado, Chip...",
+    name2: "Супер Филадельфия",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
     price: "475",
   },
   {
@@ -308,6 +380,8 @@ export const products = [
     name: "Philadelphia Crunch",
     description:
       "Salmon, Rice, Creametto Cheese, Unagi Sauce, Shrimp, Avocado, Chip...",
+    name2: "Супер Филадельфия",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
     filter: "NEW",
     price: 475,
   },
@@ -317,6 +391,8 @@ export const products = [
     image: "/products/deserts/desert-img-2.png",
     name: "Philadelphia Creme Brulee",
     description: "Cream Cheese, Salmon Tataki with Cane Sugar, Unagi Sauce...",
+    name2: "Супер Филадельфия",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
     filter: "HOT",
     price: 395,
   },
@@ -326,6 +402,8 @@ export const products = [
     image: "/products/deserts/desert-img-3.png",
     name: "Super Philadelphia",
     description: "Plenty of Salmon, Cream Cheese, Cucumber, Rice...",
+    name2: "Супер Филадельфия",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
     filter: "",
     price: 425,
   },
@@ -335,6 +413,8 @@ export const products = [
     image: "/products/deserts/desert-img-4.png",
     name: "Tiger Mama",
     description: "Tiger Prawn, Cucumber, Avocado, Aioli Sauce, Rice, Roe...",
+    name2: "Супер Филадельфия",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
     filter: "",
     price: 525,
   },
@@ -344,6 +424,8 @@ export const products = [
     image: "/products/deserts/desert-img-5.png",
     name: "Tiger Mama",
     description: "Tiger Prawn, Cucumber, Avocado, Aioli Sauce, Rice, Roe...",
+    name2: "Супер Филадельфия",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
     filter: "",
     price: 525,
   },
@@ -353,6 +435,8 @@ export const products = [
     image: "/products/deserts/desert-img-6.png",
     name: "Philadelphia Creme Brulee",
     description: "Cream Cheese, Salmon Tataki with Cane Sugar, Unagi Sauce...",
+    name2: "Супер Филадельфия",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
     filter: "",
     price: 395,
   },
@@ -363,6 +447,8 @@ export const products = [
     name: "Philadelphia Crunch",
     description:
       "Salmon, Rice, Creametto Cheese, Unagi Sauce, Shrimp, Avocado, Chip...",
+    name2: "Супер Филадельфия",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
     filter: "",
     price: 475,
   },
@@ -372,6 +458,8 @@ export const products = [
     image: "/products/deserts/desert-img-8.png",
     name: "Super Philadelphia",
     description: "Plenty of Salmon, Cream Cheese, Cucumber, Rice...",
+    name2: "Супер Филадельфия",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
     filter: "",
     price: 425,
   },
@@ -381,7 +469,10 @@ export const products = [
     filter: "New",
     image: "/products/drinks/drink-img-1.png",
     name: "Philadelphia Crunch",
-    description: "Salmon, Rice, Creametto Cheese, Unagi Sauce, Shrimp, Avocado, Chip...",
+    description:
+      "Salmon, Rice, Creametto Cheese, Unagi Sauce, Shrimp, Avocado, Chip...",
+    name2: "Супер Филадельфия",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
     price: 475,
   },
   {
@@ -391,6 +482,8 @@ export const products = [
     image: "/products/drinks/drink-img-2.png",
     name: "Philadelphia Creme Brulee",
     description: "Cream Cheese, Salmon Tataki with Cane Sugar, Unagi Sauce...",
+    name2: "Супер Филадельфия",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
     price: 395,
   },
   {
@@ -400,6 +493,8 @@ export const products = [
     image: "/products/drinks/drink-img-3.png",
     name: "Super Philadelphia",
     description: "Plenty of Salmon, Cream Cheese, Cucumber, Rice...",
+    name2: "Супер Филадельфия",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
     price: 425,
   },
   {
@@ -409,6 +504,8 @@ export const products = [
     image: "/products/drinks/drink-img-4.png",
     name: "Tiger Mama",
     description: "Tiger Prawn, Cucumber, Avocado, Aioli Sauce, Rice, Roe...",
+    name2: "Супер Филадельфия",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
     price: 425,
   },
   {
@@ -418,6 +515,8 @@ export const products = [
     image: "/products/drinks/drink-img-5.png",
     name: "Super Philadelphia",
     description: "Tiger Prawn, Cucumber, Avocado, Aioli Sauce, Rice, Roe...",
+    name2: "Супер Филадельфия",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
     price: 425,
   },
   {
@@ -427,6 +526,8 @@ export const products = [
     image: "/products/drinks/drink-img-6.png",
     name: "Tiger Mama",
     description: "Tiger Prawn, Cucumber, Avocado, Aioli Sauce, Rice, Roe...",
+    name2: "Супер Филадельфия",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
     price: 525,
   },
   {
@@ -446,5 +547,7 @@ export const products = [
     name: "Tiger Mama",
     description: "Tiger Prawn, Cucumber, Avocado, Aioli Sauce, Rice, Roe...",
     price: 525,
+    name2: "Супер Филадельфия",
+    description2: "Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...",
   },
 ];

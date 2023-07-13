@@ -9,21 +9,22 @@ import { categories } from "../../data/categories";
 import "./header.scss";
 import { NavLink } from "react-router-dom";
 import { CartContext } from "../../context/ProductContex";
-
+import { LanguageContext } from "../../context/LanguageContext";
 
 const MainHeader = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
+  const { selectedLanguage, changeLanguage } = useContext(LanguageContext);
   const { cartItems } = useContext(CartContext);
   useEffect(() => {
     const handleScroll = () => {
       setScrollPosition(window.scrollY);
     };
-  
-    window.addEventListener('scroll', handleScroll);
-  
+
+    window.addEventListener("scroll", handleScroll);
+
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -46,7 +47,7 @@ const MainHeader = () => {
 
     window.scrollTo({
       top: targetElement.offsetTop - offset,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
   return (
@@ -56,42 +57,52 @@ const MainHeader = () => {
           <div className="nav_left">
             <div className="language_option">
               <img src={language} alt="language icon" />
-              <select name="language" id="language">
+              <select
+                name="language"
+                id="language"
+                value={selectedLanguage}
+                onChange={(e) => changeLanguage(e.target.value)}
+              >
                 <option value="en">Eng</option>
                 <option value="ru">Ru</option>
               </select>
             </div>
-            <p className="address">Проверить адрес</p>
+            <p className="address">{selectedLanguage === 'en' ? 'Check the address' : 'Проверить адрес'}</p>
             <p className="delivering">
-              Среднее время доставки*
-              <span className="delivering_time">34567</span>:
+            {selectedLanguage === 'en' ? 'Average delivery time:*' : 'Среднее время доставки*:'}
+              <span className="delivering_time">11:00 до 23:00</span>:
             </p>
           </div>
           <div className="nav_right">
-            <p>Время работы: с 11:00 до 23:00</p>
+          
+            <p>{selectedLanguage === 'en' ? 'Opening hours: from 11:00 to 23:00' : 'Время работы: с 11:00 до 23:00'}</p>
             <div className="user_login">
               <img src={userLogin} alt="account" />
-              <p>Войти в аккаунт</p>
+              <p>{selectedLanguage === 'en' ? 'Enter the Account' : 'Войти в аккаунт'}</p>
             </div>
           </div>
         </nav>
         <div className="line"></div>
       </header>
-      <div className={`wrapper ${isSticky ? "sticky" : ""}`}>
+      <div className={`wrapper  ${isSticky ? "sticky" : ""}`}>
         <div className={`fixed_navbar container`}>
           <div className="logo_wrapper">
-            <img src={logo} alt="" />
-            <h1>Куда пицца</h1>
+            <NavLink to="/" className="logo_box">
+              <img src={logo} alt="" />
+              <h1>{selectedLanguage === 'en' ? 'Where is Pizza?' : 'Куда пицца'}</h1>
+            </NavLink>
             <ul className={`sticky_navbar  ${isSticky ? "show_nav" : ""}`}>
               {categories.map((res, index) => (
                 <li key={index}>
-                  <NavLink onClick={() => scrollTo(res.link)} href="#g">{res.name}</NavLink>
+                  <NavLink onClick={() => scrollTo(res.link)} href="#g">
+                  {selectedLanguage === 'en' ? `${res.name}` : `${res.name2}`}
+                  </NavLink>
                 </li>
               ))}
             </ul>
           </div>
-          <NavLink to={'cart'} className="">
-            <button  className="cart">
+          <NavLink to={"cart"} className="">
+            <button className="cart">
               <img src={cart} alt="cart" />
               <p className="price">{cartItems.length} </p>
             </button>
@@ -103,13 +114,12 @@ const MainHeader = () => {
         <div className={`category ${isSticky ? "my-3" : ""}`}>
           {categories.map((res, index) => (
             <NavLink
-             onClick={() => scrollTo(res.link)}
-            
+              onClick={() => scrollTo(res.link)}
               key={index}
               className="category_row"
             >
               <img src={res.image} alt="" />
-              <p className="title">{res.name}</p>
+              <p className="title">{selectedLanguage === 'en' ? `${res.name}` : `${res.name2}`}</p>
             </NavLink>
           ))}
         </div>

@@ -27,10 +27,26 @@ export const CartProvider = ({ children }) => {
             : cartItem
         )
       );
-      toast.success("Product quantity updated in cart!");
+      toast.success("Product quantity updated in cart!", {
+        position: toast.POSITION.TOP_CENTER,
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
     } else {
       setCartItems((prevItems) => [...prevItems, { ...item, quantity: 1 }]);
-      toast.success("Product added to cart!");
+      toast.success("Product added to cart!",{
+        position: toast.POSITION.TOP_CENTER,
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
     }
   };
   const removeFromCart = (item) => {

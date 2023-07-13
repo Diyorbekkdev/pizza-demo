@@ -5,6 +5,12 @@
   @extend %df;
   h2 {
     @extend %heading;
+    @include media(768px){
+      font-size: 40px;
+    }
+    @include media(400px){
+      font-size: 30px;
+    }
   }
 }
 .pizza_row {
@@ -12,6 +18,18 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
+  @include media(1236px){
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+  }
+  @include media(890px){
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+  @include media(648px){
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+  }
 }
 
 .info {
@@ -82,11 +100,20 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 500px;
+  h1{
+   @include media(768px){
+    font-size: 30px;
+   }
+   @include media(400px){
+    font-size: 25px;
+   }
+  }
 }
 #price {
   padding: 10px;
   background: transparent;
   border: none;
+  outline: none;
   border-radius: 6px;
   border: 1px solid var(--line-gray, #f0f0f0);
   background: #fff;

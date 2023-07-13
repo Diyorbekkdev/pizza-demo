@@ -2,9 +2,10 @@ import React, { useContext, useEffect } from "react";
 import { CartContext } from "../../../context/ProductContex";
 // style
 import "./cartcards.scss";
+import { LanguageContext } from "../../../context/LanguageContext";
 const CartCards = () => {
   const { cartItems, addToCart} = useContext(CartContext);
-
+  const { selectedLanguage} = useContext(LanguageContext);
   const getTotalPrice = () => {
     let total = 0;
     cartItems.forEach((item) => {
@@ -31,7 +32,7 @@ const CartCards = () => {
           <div className="main_info">
             <img src={res.image} alt="" />
             <div className="text_info">
-              <h3>{res.name}</h3>
+              <h3>{selectedLanguage === 'en' ? `${res.name}` : `${res.name2}`}</h3>
               <p>{res.description}</p>
             </div>
           </div>
@@ -42,14 +43,14 @@ const CartCards = () => {
               <button className="btn increase" onClick={() => handleIncrement(res)}>+</button>
             </div>
             <p>
-              <span>{res.price} ₽</span>
+              <span>{selectedLanguage === 'en' ? `${res.price} $` : `${res.price} ₽`} </span>
             </p>
           </div>
         </div>
       ))}
       <div id="pagination-container"></div>
       <div className="total_price">
-            <p className="total_price"><span>Total Price:</span> {getTotalPrice()}₽</p>
+            <p className="total_price"><span>{selectedLanguage === 'en' ? `Total Price:` : `Итоговая цена:`} </span> {getTotalPrice()} {selectedLanguage === 'en' ? `$` : `₽`}</p>
       </div>
     </div>
   );
